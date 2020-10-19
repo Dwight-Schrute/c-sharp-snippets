@@ -4,7 +4,7 @@ public class Program
     {
         string clp = System.Windows.Forms.Clipboard.GetText();
         int s1 = clp.IndexOf("(");
-        string result = System.String.ToLower(clp.Remove(s1).Trim());
-        System.Windows.Forms.Clipboard.SetText(result);
+        string result = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToLower(clp);
+        System.Windows.Forms.Clipboard.SetText(result.Remove(s1).Trim());
     }
 }

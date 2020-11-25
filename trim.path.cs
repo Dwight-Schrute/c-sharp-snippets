@@ -3,7 +3,7 @@ public class Program
     public static void Main()
     {
         string clp = System.Windows.Forms.Clipboard.GetText();
-        string root = @"C:\o\globaldebtsolutions.com\gds - a\docLib\";
+        string root = @"<<ENVIRONMENTAL VARIABLE>>";
         if (clp.Contains(root)
         {
             System.Windows.Forms.Clipboard.SetText(clp.Replace(root, ""));

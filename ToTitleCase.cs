@@ -1,4 +1,3 @@
-//without declaring namespace directives like "using System;", "using System.Threading;" as they are invoked directly.
 public class Program
 {
 	public static void Main()
@@ -8,4 +7,3 @@ public class Program
 		System.Windows.Forms.Clipboard.SetText(result);
 	}
 }
-//System.Windows.Forms.MessageBox.Show(result);
